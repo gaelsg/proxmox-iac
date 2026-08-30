@@ -88,6 +88,12 @@ variable "nesting" {
   description = "Habilita nesting (necesario para correr Docker/Podman dentro del contenedor)"
 }
 
+variable "keyctl" {
+  type        = bool
+  default     = false
+  description = "Habilita la syscall keyctl (necesaria para k3s/containerd dentro de un LXC sin privilegios)"
+}
+
 variable "start_on_boot" {
   type        = bool
   default     = true
