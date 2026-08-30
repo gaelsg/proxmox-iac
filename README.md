@@ -13,7 +13,8 @@ Solo gestiona **infraestructura nueva** — LXC 100 (Nextcloud) y 101 (docker-ho
 ```
 modules/lxc/              # modulo reusable: 1 LXC parametrizado
 environments/
-  observability/          # primer caso de uso: LXC para la Idea 3 (Prometheus/Grafana/Alertmanager)
+  observability/          # LXC para la Idea 3 (Prometheus/Grafana/Alertmanager)
+  vault/                  # LXC para la Idea 2 (HashiCorp Vault, ver vault-secrets)
 ```
 
 Cada ambiente nuevo (ej. una VM para k3s en la Idea 6) instancia el mismo módulo con sus propios parámetros.
