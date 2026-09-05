@@ -25,8 +25,9 @@ resource "proxmox_virtual_environment_container" "this" {
   }
 
   network_interface {
-    name   = "eth0"
-    bridge = var.bridge
+    name     = "eth0"
+    bridge   = var.bridge
+    firewall = true
   }
 
   initialization {
