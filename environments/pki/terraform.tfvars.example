@@ -1,0 +1,8 @@
+proxmox_endpoint      = "https://192.168.8.75:8006/"
+proxmox_token_id      = "tofu@pve!tofu-iac"
+proxmox_token_secret  = ""
+proxmox_insecure      = true
+
+ssh_public_keys = [
+  "ssh-ed25519 AAAA... tofu-provisioned-infra@modo-ingenieria",
+]
